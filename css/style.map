@@ -1,0 +1,36 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/utilities/_variables.scss",
+		"../scss/utilities/_mixins.scss",
+		"../scss/base/_index.scss",
+		"../scss/base/_typography.scss",
+		"../scss/components/_index.scss",
+		"../scss/components/_buttons.scss",
+		"../scss/components/_forms.scss",
+		"../scss/components/_navigation.scss",
+		"../scss/components/_grid.scss",
+		"../scss/components/_media-queries.scss",
+		"../scss/components/_images.scss"
+	],
+	"sourcesContent": [
+		"@import 'utilities/index';\n@import 'base/index';\n@import 'components/index';",
+		"@import 'variables';\n@import 'mixins';",
+		"",
+		"",
+		"@import 'typography';",
+		"",
+		"@import 'buttons';\n@import 'forms';\n@import 'navigation';\n@import 'grid';\n@import 'media-queries';\n@import 'images';",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
