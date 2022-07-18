@@ -22,7 +22,7 @@
 		"",
 		"",
 		"@import 'typography';",
-		"",
+		"* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  font-family: \"Lato\", sans-serif;\n}\n\n#HaleighMacchiarella,\n#CherieFlecha,\n#AbagaelOtani,\n#IngerRevis,\n#ListerDangerfield,\n#BillieKrenzer,\n#IrvineHeilbrun,\n#MargetHulstrand,\n#JosiahJenness,\n#JenningsRominger,\n#ReynoldGrabner,\n#MelodyKjos {\n  display: flex;\n  align-items: center;\n  line-height: 1.6;\n  border: 1px solid black;\n  img {\n    border-radius: 50%;\n  }\n}\n\n",
 		"@import 'buttons';\n@import 'forms';\n@import 'navigation';\n@import 'grid';\n@import 'media-queries';\n@import 'images';",
 		"",
 		"",
@@ -32,5 +32,5 @@
 		""
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AKAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,kBAAkB;CAChC;;;AAED,AAAA,oBAAoB;AACpB,aAAa;AACb,aAAa;AACb,WAAW;AACX,kBAAkB;AAClB,cAAc;AACd,eAAe;AACf,gBAAgB;AAChB,cAAc;AACd,iBAAiB;AACjB,eAAe;AACf,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,eAAe;CAIxB;;;AAnBD,AAgBE,oBAhBkB,CAgBlB,GAAG;AAfL,aAAa,CAeX,GAAG;AAdL,aAAa,CAcX,GAAG;AAbL,WAAW,CAaT,GAAG;AAZL,kBAAkB,CAYhB,GAAG;AAXL,cAAc,CAWZ,GAAG;AAVL,eAAe,CAUb,GAAG;AATL,gBAAgB,CASd,GAAG;AARL,cAAc,CAQZ,GAAG;AAPL,iBAAiB,CAOf,GAAG;AANL,eAAe,CAMb,GAAG;AALL,WAAW,CAKT,GAAG,CAAC;EACF,aAAa,EAAE,GAAG;CACnB"
 }
