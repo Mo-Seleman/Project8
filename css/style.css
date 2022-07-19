@@ -6,18 +6,58 @@
   font-family: "Lato", sans-serif;
 }
 
-/* line 8, ../../../../Code/Project8/scss/base/_typography.scss */
-body {
+/* line 7, ../../../../Code/Project8/scss/base/_typography.scss */
+main[class="gridContainer"] {
   margin: 15px;
 }
 
-/* line 12, ../../../../Code/Project8/scss/base/_typography.scss */
-h1 {
-  font-size: 1.5rem;
-  padding-bottom: 15px;
+/* line 11, ../../../../Code/Project8/scss/base/_typography.scss */
+body {
+  position: relative;
 }
 
-/* line 17, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 15, ../../../../Code/Project8/scss/base/_typography.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+/* line 24, ../../../../Code/Project8/scss/base/_typography.scss */
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+/* line 35, ../../../../Code/Project8/scss/base/_typography.scss */
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/* line 42, ../../../../Code/Project8/scss/base/_typography.scss */
+.hidden {
+  display: none;
+}
+
+/* line 46, ../../../../Code/Project8/scss/base/_typography.scss */
+h1 {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+/* line 51, ../../../../Code/Project8/scss/base/_typography.scss */
 #HaleighMacchiarella,
 #CherieFlecha,
 #AbagaelOtani,
@@ -38,7 +78,7 @@ h1 {
   padding: 15px;
 }
 
-/* line 35, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 69, ../../../../Code/Project8/scss/base/_typography.scss */
 #HaleighMacchiarella img,
 #CherieFlecha img,
 #AbagaelOtani img,
@@ -55,7 +95,7 @@ h1 {
   margin-right: 15px;
 }
 
-/* line 39, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 73, ../../../../Code/Project8/scss/base/_typography.scss */
 #HaleighMacchiarella p,
 #CherieFlecha p,
 #AbagaelOtani p,
