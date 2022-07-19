@@ -22,15 +22,15 @@
 		"",
 		"",
 		"@import 'typography';",
-		"* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  font-family: \"Lato\", sans-serif;\n}\n\n#HaleighMacchiarella,\n#CherieFlecha,\n#AbagaelOtani,\n#IngerRevis,\n#ListerDangerfield,\n#BillieKrenzer,\n#IrvineHeilbrun,\n#MargetHulstrand,\n#JosiahJenness,\n#JenningsRominger,\n#ReynoldGrabner,\n#MelodyKjos {\n  display: flex;\n  align-items: center;\n  line-height: 1.6;\n  border: 1px solid black;\n  img {\n    border-radius: 50%;\n  }\n}\n\n",
+		"* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  font-family: \"Lato\", sans-serif;\n}\n\nbody {\n  margin: 15px\n}\n\nh1 {\n font-size: 1.5rem;\n padding-bottom: 15px;\n}\n\n#HaleighMacchiarella,\n#CherieFlecha,\n#AbagaelOtani,\n#IngerRevis,\n#ListerDangerfield,\n#BillieKrenzer,\n#IrvineHeilbrun,\n#MargetHulstrand,\n#JosiahJenness,\n#JenningsRominger,\n#ReynoldGrabner,\n#MelodyKjos {\n  display: flex;\n  align-items: center;\n  line-height: 1.5;\n  border: 2px solid #dfdfdf;\n  border-radius: 5px;\n  padding: 15px;\n  img {\n    border-radius: 50%;\n    margin-right: 15px;\n  }\n  p {\n    color: #b0b5b7;\n  }\n}\n\n",
 		"@import 'buttons';\n@import 'forms';\n@import 'navigation';\n@import 'grid';\n@import 'media-queries';\n@import 'images';",
 		"",
 		"",
 		"",
-		"",
+		"\n   main {\n    display: grid;\n   }\n   \n   .gridContainer {\n    grid-template-columns: repeat(3, 1fr);\n    gap: 1.5em;\n   }",
 		"",
 		""
 	],
 	"names": [],
-	"mappings": ";AKAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,kBAAkB;CAChC;;;AAED,AAAA,oBAAoB;AACpB,aAAa;AACb,aAAa;AACb,WAAW;AACX,kBAAkB;AAClB,cAAc;AACd,eAAe;AACf,gBAAgB;AAChB,cAAc;AACd,iBAAiB;AACjB,eAAe;AACf,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,eAAe;CAIxB;;;AAnBD,AAgBE,oBAhBkB,CAgBlB,GAAG;AAfL,aAAa,CAeX,GAAG;AAdL,aAAa,CAcX,GAAG;AAbL,WAAW,CAaT,GAAG;AAZL,kBAAkB,CAYhB,GAAG;AAXL,cAAc,CAWZ,GAAG;AAVL,eAAe,CAUb,GAAG;AATL,gBAAgB,CASd,GAAG;AARL,cAAc,CAQZ,GAAG;AAPL,iBAAiB,CAOf,GAAG;AANL,eAAe,CAMb,GAAG;AALL,WAAW,CAKT,GAAG,CAAC;EACF,aAAa,EAAE,GAAG;CACnB"
+	"mappings": ";AKAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,kBAAkB;CAChC;;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,IACV;CAAC;;;AAED,AAAA,EAAE,CAAC;EACF,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,IAAI;CACpB;;;AAED,AAAA,oBAAoB;AACpB,aAAa;AACb,aAAa;AACb,WAAW;AACX,kBAAkB;AAClB,cAAc;AACd,eAAe;AACf,gBAAgB;AAChB,cAAc;AACd,iBAAiB;AACjB,eAAe;AACf,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,iBAAiB;EACzB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;CAQd;;;AAzBD,AAkBE,oBAlBkB,CAkBlB,GAAG;AAjBL,aAAa,CAiBX,GAAG;AAhBL,aAAa,CAgBX,GAAG;AAfL,WAAW,CAeT,GAAG;AAdL,kBAAkB,CAchB,GAAG;AAbL,cAAc,CAaZ,GAAG;AAZL,eAAe,CAYb,GAAG;AAXL,gBAAgB,CAWd,GAAG;AAVL,cAAc,CAUZ,GAAG;AATL,iBAAiB,CASf,GAAG;AARL,eAAe,CAQb,GAAG;AAPL,WAAW,CAOT,GAAG,CAAC;EACF,aAAa,EAAE,GAAG;EAClB,YAAY,EAAE,IAAI;CACnB;;;AArBH,AAsBE,oBAtBkB,CAsBlB,CAAC;AArBH,aAAa,CAqBX,CAAC;AApBH,aAAa,CAoBX,CAAC;AAnBH,WAAW,CAmBT,CAAC;AAlBH,kBAAkB,CAkBhB,CAAC;AAjBH,cAAc,CAiBZ,CAAC;AAhBH,eAAe,CAgBb,CAAC;AAfH,gBAAgB,CAed,CAAC;AAdH,cAAc,CAcZ,CAAC;AAbH,iBAAiB,CAaf,CAAC;AAZH,eAAe,CAYb,CAAC;AAXH,WAAW,CAWT,CAAC,CAAC;EACA,KAAK,EAAE,OAAO;CACf;;;AKvCA,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAI;CACb;;;AAED,AAAA,cAAc,CAAC;EACd,qBAAqB,EAAE,cAAc;EACrC,GAAG,EAAE,KAAK;CACV"
 }

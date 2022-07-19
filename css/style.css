@@ -7,6 +7,17 @@
 }
 
 /* line 8, ../../../../Code/Project8/scss/base/_typography.scss */
+body {
+  margin: 15px;
+}
+
+/* line 12, ../../../../Code/Project8/scss/base/_typography.scss */
+h1 {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+/* line 17, ../../../../Code/Project8/scss/base/_typography.scss */
 #HaleighMacchiarella,
 #CherieFlecha,
 #AbagaelOtani,
@@ -21,11 +32,13 @@
 #MelodyKjos {
   display: flex;
   align-items: center;
-  line-height: 1.6;
-  border: 1px solid black;
+  line-height: 1.5;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 15px;
 }
 
-/* line 24, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 35, ../../../../Code/Project8/scss/base/_typography.scss */
 #HaleighMacchiarella img,
 #CherieFlecha img,
 #AbagaelOtani img,
@@ -39,6 +52,34 @@
 #ReynoldGrabner img,
 #MelodyKjos img {
   border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* line 39, ../../../../Code/Project8/scss/base/_typography.scss */
+#HaleighMacchiarella p,
+#CherieFlecha p,
+#AbagaelOtani p,
+#IngerRevis p,
+#ListerDangerfield p,
+#BillieKrenzer p,
+#IrvineHeilbrun p,
+#MargetHulstrand p,
+#JosiahJenness p,
+#JenningsRominger p,
+#ReynoldGrabner p,
+#MelodyKjos p {
+  color: #b0b5b7;
+}
+
+/* line 2, ../../../../Code/Project8/scss/components/_grid.scss */
+main {
+  display: grid;
+}
+
+/* line 6, ../../../../Code/Project8/scss/components/_grid.scss */
+.gridContainer {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
