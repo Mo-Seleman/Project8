@@ -10,6 +10,8 @@ main[class="gridContainer"] {
 
 body {
   position: relative;
+  max-width: 1271px;
+  margin: auto;
 }
 
 .overlay {
@@ -48,18 +50,20 @@ h1 {
   padding: 15px;
 }
 
-#HaleighMacchiarella,
-#CherieFlecha,
-#AbagaelOtani,
-#IngerRevis,
-#ListerDangerfield,
-#BillieKrenzer,
-#IrvineHeilbrun,
-#MargetHulstrand,
-#JosiahJenness,
-#JenningsRominger,
-#ReynoldGrabner,
-#MelodyKjos {
+// #HaleighMacchiarella,
+// #CherieFlecha,
+// #AbagaelOtani,
+// #IngerRevis,
+// #AlisterDangerfield,
+// #BillieKrenzer,
+// #IrvineHeilbrun,
+// #MargetHulstrand,
+// #JosiahJenness,
+// #JenningsRominger,
+// #ReynoldGrabner,
+// #MelodyKjos
+
+.card { 
   display: flex;
   align-items: center;
   line-height: 1.5;

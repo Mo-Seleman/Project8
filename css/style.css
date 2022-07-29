@@ -14,9 +14,11 @@ main[class="gridContainer"] {
 /* line 11, ../../../../Code/Project8/scss/base/_typography.scss */
 body {
   position: relative;
+  max-width: 1271px;
+  margin: auto;
 }
 
-/* line 15, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 17, ../../../../Code/Project8/scss/base/_typography.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -26,7 +28,7 @@ body {
   background: rgba(100, 100, 100, 0.4);
 }
 
-/* line 24, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 26, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal {
   width: 375px;
   margin: 15% auto auto;
@@ -38,7 +40,7 @@ body {
   padding: 30px 20px;
 }
 
-/* line 35, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 37, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal-close {
   position: absolute;
   right: 15px;
@@ -46,30 +48,19 @@ body {
   cursor: pointer;
 }
 
-/* line 42, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 44, ../../../../Code/Project8/scss/base/_typography.scss */
 .hidden {
   display: none;
 }
 
-/* line 46, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 48, ../../../../Code/Project8/scss/base/_typography.scss */
 h1 {
   font-size: 1.5rem;
   padding: 15px;
 }
 
-/* line 51, ../../../../Code/Project8/scss/base/_typography.scss */
-#HaleighMacchiarella,
-#CherieFlecha,
-#AbagaelOtani,
-#IngerRevis,
-#ListerDangerfield,
-#BillieKrenzer,
-#IrvineHeilbrun,
-#MargetHulstrand,
-#JosiahJenness,
-#JenningsRominger,
-#ReynoldGrabner,
-#MelodyKjos {
+/* line 66, ../../../../Code/Project8/scss/base/_typography.scss */
+.card {
   display: flex;
   align-items: center;
   line-height: 1.5;
@@ -78,36 +69,14 @@ h1 {
   padding: 15px;
 }
 
-/* line 69, ../../../../Code/Project8/scss/base/_typography.scss */
-#HaleighMacchiarella img,
-#CherieFlecha img,
-#AbagaelOtani img,
-#IngerRevis img,
-#ListerDangerfield img,
-#BillieKrenzer img,
-#IrvineHeilbrun img,
-#MargetHulstrand img,
-#JosiahJenness img,
-#JenningsRominger img,
-#ReynoldGrabner img,
-#MelodyKjos img {
+/* line 73, ../../../../Code/Project8/scss/base/_typography.scss */
+.card img {
   border-radius: 50%;
   margin-right: 15px;
 }
 
-/* line 73, ../../../../Code/Project8/scss/base/_typography.scss */
-#HaleighMacchiarella p,
-#CherieFlecha p,
-#AbagaelOtani p,
-#IngerRevis p,
-#ListerDangerfield p,
-#BillieKrenzer p,
-#IrvineHeilbrun p,
-#MargetHulstrand p,
-#JosiahJenness p,
-#JenningsRominger p,
-#ReynoldGrabner p,
-#MelodyKjos p {
+/* line 77, ../../../../Code/Project8/scss/base/_typography.scss */
+.card p {
   color: #b0b5b7;
 }
 
