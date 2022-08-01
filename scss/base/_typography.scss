@@ -10,10 +10,12 @@ main[class="gridContainer"] {
 
 body {
   position: relative;
-  max-width: 1271px;
-  margin: auto;
+  height: 100vh;
 }
 
+/* ======================================================= */
+/*                       Overlay                           */
+/* ======================================================= */
 .overlay {
   position: absolute;
   top: 0;
@@ -23,6 +25,9 @@ body {
   background: rgba(100, 100, 100, 0.4);
 }
 
+/* ======================================================= */
+/*                         Modal                           */
+/* ======================================================= */
 .modal {
   width: 375px;
   margin: 15% auto auto;
@@ -50,19 +55,9 @@ h1 {
   padding: 15px;
 }
 
-// #HaleighMacchiarella,
-// #CherieFlecha,
-// #AbagaelOtani,
-// #IngerRevis,
-// #AlisterDangerfield,
-// #BillieKrenzer,
-// #IrvineHeilbrun,
-// #MargetHulstrand,
-// #JosiahJenness,
-// #JenningsRominger,
-// #ReynoldGrabner,
-// #MelodyKjos
-
+/* ======================================================= */
+/*                         Cards                           */
+/* ======================================================= */
 .card { 
   display: flex;
   align-items: center;
