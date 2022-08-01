@@ -16,7 +16,7 @@ fetch(urlAPI)
   .catch((err) => console.log(err));
 
 /* ======================================================= */
-/*                    Displaying Info                      */
+/*                   Displaying Info                       */
 /* ======================================================= */
 function displayEmployees(employeeData) {
   employees = employeeData;
@@ -84,3 +84,17 @@ gridContainer.addEventListener('click', e => {
 modalClose.addEventListener('click', () => {
   overlay.classList.add('hidden')
 });
+
+/* ======================================================= */
+/*                     Employee Search                     */
+/* ======================================================= */
+searchInput = document.getElementById('employee-search');
+
+searchInput.addEventListener('input', e => {
+  console.log(searchInput.value)
+});
+
+/* Need To Get All Names In One Array*/
+let [] = employees;
+
+console.log(employees)
