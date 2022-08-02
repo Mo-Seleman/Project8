@@ -95,5 +95,10 @@ inputLog.addEventListener('keyup', filterNames)
 function filterNames () {
   let filterValue = inputLog.value.toLowerCase();
   const names = document.querySelectorAll('.name');
-  console.log(names.innerHTML)
+  console.log(names[0]);
 };
+
+filterNames();
+
+// for (let i = 0; i < names.length; i++) {
+//   let captions = names[i]; }
