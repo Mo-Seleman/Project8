@@ -27,12 +27,13 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(100, 100, 100, 0.4);
+  height: 110vh;
 }
 
 /* ======================================================= */
 /*                         Modal                           */
 /* ======================================================= */
-/* line 30, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 31, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal {
   width: 375px;
   margin: 15% auto auto;
@@ -45,7 +46,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 42, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 43, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal-close {
   position: absolute;
   right: 15px;
@@ -53,12 +54,12 @@ body {
   cursor: pointer;
 }
 
-/* line 49, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 50, ../../../../Code/Project8/scss/base/_typography.scss */
 .hidden {
   display: none;
 }
 
-/* line 53, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 54, ../../../../Code/Project8/scss/base/_typography.scss */
 h1 {
   font-size: 1.5rem;
   padding: 15px;
@@ -67,7 +68,7 @@ h1 {
 /* ======================================================= */
 /*                         Cards                           */
 /* ======================================================= */
-/* line 61, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 62, ../../../../Code/Project8/scss/base/_typography.scss */
 .card {
   display: flex;
   align-items: center;
@@ -77,13 +78,13 @@ h1 {
   padding: 15px;
 }
 
-/* line 68, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 69, ../../../../Code/Project8/scss/base/_typography.scss */
 .card img {
   border-radius: 50%;
   margin-right: 15px;
 }
 
-/* line 72, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 73, ../../../../Code/Project8/scss/base/_typography.scss */
 .card p {
   color: #b0b5b7;
 }

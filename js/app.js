@@ -95,10 +95,14 @@ inputLog.addEventListener('keyup', filterNames)
 function filterNames () {
   let filterValue = inputLog.value.toLowerCase();
   const names = document.querySelectorAll('.name');
-  console.log(names[0]);
-};
 
-filterNames();
-
-// for (let i = 0; i < names.length; i++) {
-//   let captions = names[i]; }
+  for (let i = 0; i < names.length; i++) {
+    let users = names[i].innerHTML.toLowerCase();
+    let filter = users.includes(filterValue);
+  if (filter === true) {
+    names[i].closest('.card').style.display = "flex";
+  } else {
+    names[i].closest('.card').style.display = "none";
+  }
+ }
+}
