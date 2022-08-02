@@ -39,6 +39,7 @@ function displayEmployees(employeeData) {
               `
   })
     gridContainer.innerHTML = employeeHTML;
+    let [] = employees;
 };
 
 /* ======================================================= */
@@ -86,15 +87,13 @@ modalClose.addEventListener('click', () => {
 });
 
 /* ======================================================= */
-/*                     Employee Search                     */
+/*                     Employee Filter                     */
 /* ======================================================= */
-searchInput = document.getElementById('employee-search');
+let inputLog = document.getElementById('employee-search');
+inputLog.addEventListener('keyup', filterNames)
 
-searchInput.addEventListener('input', e => {
-  console.log(searchInput.value)
-});
-
-/* Need To Get All Names In One Array*/
-let [] = employees;
-
-console.log(employees)
+function filterNames () {
+  let filterValue = inputLog.value.toLowerCase();
+  const names = document.querySelectorAll('.name');
+  console.log(names.innerHTML)
+};
