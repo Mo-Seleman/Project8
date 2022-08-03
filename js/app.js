@@ -5,6 +5,7 @@ const gridContainer = document.querySelector(".gridContainer");
 const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
+let openModal;
 
 /* ======================================================= */
 /*                Getting Info From API                    */
@@ -61,52 +62,32 @@ function displayModal(index) {
       <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
       <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+    <div class="arrow-container">
     <button class="leftArrow"><</button>
-    <button class="rightArrow" onclick="arrowClickRight()">></button>
+    <button class="rightArrow"">></button>
+     </div>
     </div>
   `
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
+  
+                      /* ======== */
+                      /*  Switch  */
+                      /* ======== */
+  const arrowContainer = document.querySelector('.arrow-container');
 
+  arrowContainer.addEventListener('click', e => {
+    if (e.target.className == "rightArrow") {
+      openModal ++;
+      displayModal(openModal);
+    } else if (e.target.className == "leftArrow") {
+      openModal --;
+      displayModal(openModal);
+    } 
+  });
 };
 
-function arrowClickRight () {
-  gridContainer.addEventListener('click', e => {
-  const card = e.target.closest(".card");
-  const index = card.getAttribute('data-index');
-  return index ++;
- });
-} 
 
-/* ======== */
-/*  Switch  */
-/* ======== */
- 
-/* Get Current Index Method (index Holds The Number) */
-
-//   gridContainer.addEventListener('click', e => {
-//   const card = e.target.closest(".card");
-//   const index = card.getAttribute('data-index');
-// });
-
-/* First Method */
-
-/** onclick="arrowClickRight()" (Added To Button)
-function arrowClickRight () {
-  gridContainer.addEventListener('click', e => {
-  const card = e.target.closest(".card");
-  const index = card.getAttribute('data-index');
-  return index ++;
- });
-} 
-(Problem With This Is That Can You Add a EventListener To a Function? Also Whats index ++ actual Doing, How Does It Know To Switch To The Next Employee)
-**/
-
-/* Second Method */
-/* const rightArrow = document.getElementsByClassName('.     rightArrow');
-
-rightArrow.addEventListener('click', arrowClickRight(); 
-*/
 
 /* ======================================================= */
 /*                   Event Listener                        */
@@ -114,6 +95,7 @@ rightArrow.addEventListener('click', arrowClickRight();
 gridContainer.addEventListener('click', e => {
   const card = e.target.closest(".card");
   const index = card.getAttribute('data-index');
+  openModal = index;
   if(e.target !== gridContainer) {
     displayModal(index);
   }
@@ -145,13 +127,4 @@ function filterNames () {
     names[i].closest('.card').style.display = "none";
   }
  }
-}
-
-/* ======================================================= */
-/*                       Switches                          */
-/* ======================================================= */
-
-// const rightArrow = document.getElementsByClassName('.rightArrow');
-// if (rightArrow.clicked == true) {
-//   index ++;
-// }
+};
