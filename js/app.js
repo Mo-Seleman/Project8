@@ -61,6 +61,8 @@ function displayModal(index) {
       <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
       <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+    <button class="leftArrow" onclick="arrowSwitch"><</button>
+    <button class="rightArrow" onclick="arrowSwitch">></button>
     </div>
   `
     overlay.classList.remove("hidden");
@@ -105,4 +107,30 @@ function filterNames () {
     names[i].closest('.card').style.display = "none";
   }
  }
+}
+
+/* ======================================================= */
+/*                       Switches                          */
+/* ======================================================= */
+
+// function arrowSwitch () {
+//   const leftArrow = document.getElementsByClassName('.leftArrow');
+//   const rightArrow = document.getElementsByClassName('.rightArrow');
+//   const currentIndex = document.querySelectorAll('.card').getAttribute('data-index');
+
+//   console.log(currentIndex);
+
+//   leftArrow.addEventListener('click', e => {
+//     currentIndex =+ 1;
+//   });
+// };
+
+/*Might Need Two Function... One arrowSwitchLeft Other arrowSwitchRight
+Need To Get Current Data Index Of Card Then Go Up One If Right Clicked Go Down One If Left Clicked */
+
+const divs = document.querySelectorAll('div[class="card"]');
+
+for (let i = 0; i < divs.length; i++) {
+  let dataIndex = divs[i].getAttribute("data-index");
+  console.log(dataIndex);
 }

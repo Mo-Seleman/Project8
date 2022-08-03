@@ -89,6 +89,14 @@ h1 {
   color: #b0b5b7;
 }
 
+/* line 1, ../../../../Code/Project8/scss/components/_buttons.scss */
+.leftArrow,
+.rightArrow {
+  width: 70px;
+  height: 30px;
+  margin-top: 10px;
+}
+
 /* ======================================================= */
 /*                     Employee Search                     */
 /* ======================================================= */
