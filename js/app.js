@@ -61,22 +61,60 @@ function displayModal(index) {
       <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
       <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
-    <button class="leftArrow" onclick="arrowSwitch"><</button>
-    <button class="rightArrow" onclick="arrowSwitch">></button>
+    <button class="leftArrow"><</button>
+    <button class="rightArrow" onclick="arrowClickRight()">></button>
     </div>
   `
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
-}
+
+};
+
+function arrowClickRight () {
+  gridContainer.addEventListener('click', e => {
+  const card = e.target.closest(".card");
+  const index = card.getAttribute('data-index');
+  return index ++;
+ });
+} 
+
+/* ======== */
+/*  Switch  */
+/* ======== */
+ 
+/* Get Current Index Method (index Holds The Number) */
+
+//   gridContainer.addEventListener('click', e => {
+//   const card = e.target.closest(".card");
+//   const index = card.getAttribute('data-index');
+// });
+
+/* First Method */
+
+/** onclick="arrowClickRight()" (Added To Button)
+function arrowClickRight () {
+  gridContainer.addEventListener('click', e => {
+  const card = e.target.closest(".card");
+  const index = card.getAttribute('data-index');
+  return index ++;
+ });
+} 
+(Problem With This Is That Can You Add a EventListener To a Function? Also Whats index ++ actual Doing, How Does It Know To Switch To The Next Employee)
+**/
+
+/* Second Method */
+/* const rightArrow = document.getElementsByClassName('.     rightArrow');
+
+rightArrow.addEventListener('click', arrowClickRight(); 
+*/
 
 /* ======================================================= */
 /*                   Event Listener                        */
 /* ======================================================= */
 gridContainer.addEventListener('click', e => {
+  const card = e.target.closest(".card");
+  const index = card.getAttribute('data-index');
   if(e.target !== gridContainer) {
-    const card = e.target.closest(".card");
-    const index = card.getAttribute('data-index');
-
     displayModal(index);
   }
 });
@@ -113,24 +151,7 @@ function filterNames () {
 /*                       Switches                          */
 /* ======================================================= */
 
-// function arrowSwitch () {
-//   const leftArrow = document.getElementsByClassName('.leftArrow');
-//   const rightArrow = document.getElementsByClassName('.rightArrow');
-//   const currentIndex = document.querySelectorAll('.card').getAttribute('data-index');
-
-//   console.log(currentIndex);
-
-//   leftArrow.addEventListener('click', e => {
-//     currentIndex =+ 1;
-//   });
-// };
-
-/*Might Need Two Function... One arrowSwitchLeft Other arrowSwitchRight
-Need To Get Current Data Index Of Card Then Go Up One If Right Clicked Go Down One If Left Clicked */
-
-const divs = document.querySelectorAll('div[class="card"]');
-
-for (let i = 0; i < divs.length; i++) {
-  let dataIndex = divs[i].getAttribute("data-index");
-  console.log(dataIndex);
-}
+// const rightArrow = document.getElementsByClassName('.rightArrow');
+// if (rightArrow.clicked == true) {
+//   index ++;
+// }
