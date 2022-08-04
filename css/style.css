@@ -6,21 +6,22 @@
   font-family: "Lato", sans-serif;
 }
 
-/* line 7, ../../../../Code/Project8/scss/base/_typography.scss */
-main[class="gridContainer"] {
-  margin: 15px;
-}
-
-/* line 11, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 9, ../../../../Code/Project8/scss/base/_typography.scss */
 body {
   position: relative;
   background-color: #EAEBEB;
 }
 
+/* line 14, ../../../../Code/Project8/scss/base/_typography.scss */
+.gridContainer {
+  max-width: 1290px;
+  margin: auto;
+}
+
 /* ======================================================= */
 /*                       Overlay                           */
 /* ======================================================= */
-/* line 19, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 22, ../../../../Code/Project8/scss/base/_typography.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -34,7 +35,7 @@ body {
 /* ======================================================= */
 /*                         Modal                           */
 /* ======================================================= */
-/* line 32, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 35, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal {
   width: 375px;
   margin: 15% auto auto;
@@ -47,7 +48,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 44, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 47, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal-close {
   position: absolute;
   right: 15px;
@@ -55,21 +56,22 @@ body {
   cursor: pointer;
 }
 
-/* line 51, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 54, ../../../../Code/Project8/scss/base/_typography.scss */
 .hidden {
   display: none;
 }
 
-/* line 55, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 58, ../../../../Code/Project8/scss/base/_typography.scss */
 h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 15px;
+  text-align: center;
 }
 
 /* ======================================================= */
 /*                         Cards                           */
 /* ======================================================= */
-/* line 63, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 67, ../../../../Code/Project8/scss/base/_typography.scss */
 .card {
   display: flex;
   align-items: center;
@@ -83,13 +85,13 @@ h1 {
   color: #F05656;
 }
 
-/* line 74, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 78, ../../../../Code/Project8/scss/base/_typography.scss */
 .card img {
   border-radius: 50%;
   margin-right: 15px;
 }
 
-/* line 78, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 82, ../../../../Code/Project8/scss/base/_typography.scss */
 .card p {
   color: #b0b5b7;
 }
@@ -120,7 +122,7 @@ input[id="employee-search"] {
   height: 35px;
   border-radius: 5px;
   padding: 5px;
-  margin: 15px;
+  margin: 10px auto 25px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

@@ -4,13 +4,16 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-main[class="gridContainer"] {
-  margin: 15px;
-}
+
 
 body {
   position: relative;
   background-color: #EAEBEB;
+}
+
+.gridContainer {
+  max-width: 1290px;
+  margin: auto;
 }
 
 /* ======================================================= */
@@ -53,8 +56,9 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 15px;
+  text-align: center;
 }
 
 /* ======================================================= */
