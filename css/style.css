@@ -14,12 +14,13 @@ main[class="gridContainer"] {
 /* line 11, ../../../../Code/Project8/scss/base/_typography.scss */
 body {
   position: relative;
+  background-color: #EAEBEB;
 }
 
 /* ======================================================= */
 /*                       Overlay                           */
 /* ======================================================= */
-/* line 18, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 19, ../../../../Code/Project8/scss/base/_typography.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -33,7 +34,7 @@ body {
 /* ======================================================= */
 /*                         Modal                           */
 /* ======================================================= */
-/* line 31, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 32, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal {
   width: 375px;
   margin: 15% auto auto;
@@ -46,7 +47,7 @@ body {
   line-height: 1.6;
 }
 
-/* line 43, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 44, ../../../../Code/Project8/scss/base/_typography.scss */
 .modal-close {
   position: absolute;
   right: 15px;
@@ -54,12 +55,12 @@ body {
   cursor: pointer;
 }
 
-/* line 50, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 51, ../../../../Code/Project8/scss/base/_typography.scss */
 .hidden {
   display: none;
 }
 
-/* line 54, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 55, ../../../../Code/Project8/scss/base/_typography.scss */
 h1 {
   font-size: 1.5rem;
   padding: 15px;
@@ -68,7 +69,7 @@ h1 {
 /* ======================================================= */
 /*                         Cards                           */
 /* ======================================================= */
-/* line 62, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 63, ../../../../Code/Project8/scss/base/_typography.scss */
 .card {
   display: flex;
   align-items: center;
@@ -76,15 +77,19 @@ h1 {
   border: 2px solid #dfdfdf;
   border-radius: 5px;
   padding: 15px;
+  background-color: #FDFDFD;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  color: #F05656;
 }
 
-/* line 69, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 74, ../../../../Code/Project8/scss/base/_typography.scss */
 .card img {
   border-radius: 50%;
   margin-right: 15px;
 }
 
-/* line 73, ../../../../Code/Project8/scss/base/_typography.scss */
+/* line 78, ../../../../Code/Project8/scss/base/_typography.scss */
 .card p {
   color: #b0b5b7;
 }
@@ -95,6 +100,10 @@ h1 {
   width: 70px;
   height: 30px;
   margin-top: 10px;
+  background-color: #F05656;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
 }
 
 /* ======================================================= */
@@ -111,6 +120,8 @@ input[id="employee-search"] {
   height: 35px;
   border-radius: 5px;
   padding: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* line 2, ../../../../Code/Project8/scss/components/_grid.scss */
