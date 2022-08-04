@@ -63,31 +63,29 @@ function displayModal(index) {
       <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     <div class="arrow-container">
-    <button class="leftArrow"><</button>
-    <button class="rightArrow"">></button>
+      <button class="leftArrow"><</button>
+      <button class="rightArrow"">></button>
      </div>
     </div>
-  `
+  `;
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
-  
                       /* ======== */
                       /*  Switch  */
                       /* ======== */
   const arrowContainer = document.querySelector('.arrow-container');
 
   arrowContainer.addEventListener('click', e => {
-    if (e.target.className == "rightArrow") {
+    let currentIndex = openModal;
+    if (e.target.className == "rightArrow" && currentIndex < 11 ) {
       openModal ++;
       displayModal(openModal);
-    } else if (e.target.className == "leftArrow") {
+    } else if (e.target.className == "leftArrow" && currentIndex > 0) {
       openModal --;
       displayModal(openModal);
     } 
-  });
+  })  
 };
-
-
 
 /* ======================================================= */
 /*                   Event Listener                        */
