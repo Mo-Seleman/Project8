@@ -113,7 +113,7 @@ let inputLog = document.getElementById('employee-search');
 inputLog.addEventListener('keyup', filterNames)
 
 function filterNames () {
-  let filterValue = inputLog.value.toLowerCase();
+  let filterValue = inputLog.value.toLowerCase().trim("");
   const names = document.querySelectorAll('.name');
 
   for (let i = 0; i < names.length; i++) {
